@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Social Santa offers real-time YouTube statistics, including subscriber count and latest videos. Track your social growth effortlessly." />
+  <meta name="keywords" content="Social Santa, YouTube API, subscriber count, video stats, social media analytics, real-time updates" />
+  <meta name="author" content="Social Santa" />
+  <title>Social Santa</title>
+  <link href="./output.css" rel="stylesheet" />
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body class="bg-slate-950 text-white">
+
+  <!-- Navbar -->
+  <nav class="w-full h-14 bg-indigo-200 flex items-center justify-between px-4">
+    <div class="text-3xl text-indigo-700 font-bold">Social Santa</div>
+    <ul class="hidden md:flex font-semibold text-indigo-800 text-2xl">
+      <li class="mx-3 hover:underline"><a href="#">Home</a></li>
+      <li class="mx-3 hover:underline"><a href="#services">Services</a></li>
+      <li class="mx-3 hover:underline"><a href="#about">About Us</a></li>
+      <li class="mx-3 hover:underline"><a href="#Contact">Contact Us</a></li>
+    </ul>
+    <button class="hidden md:block px-3 py-1 bg-indigo-700 text-white rounded font-semibold hover:bg-indigo-600">
+      Login / Sign Up
+    </button>
+    <div class="md:hidden">
+      <button class="text-3xl text-indigo-700">&#9776;</button>
+    </div>
+  </nav>
+  <!-- Hero -->
+  <div class="header h-auto">
+    <img src="./img/1.jpg" alt="social santa">
+  </div>
+  <!-- About -->
+  <section data-aos="slide-up" id="stats" class="py-16 px-4 bg-gray-300 dark:bg-gray-900">
+    <h2 class="text-3xl font-bold text-center mb-8 text-blue-900 ">About Us</h2>
+    <div data-aos="zoom-in" class="card w-full bg-white text-black rounded-2xl h-40 text-center p-5 font-bold text-3xl">
+      <p class="text-xl text-gray-700 leading-relaxed px-6 text-center">
+        Social Santa is your all-in-one platform to supercharge your social media presence, effortlessly.
+        Whether you're a small business, a content creator, or just want to stay connected with your audience 
+        during the holiday season, we've got you covered. From scheduled posts to festive campaigns and deep insights, 
+        we make managing your social accounts fun, simple, and effective.
+      </p>
+    </div>
+  </section>
+  <!-- Service -->
+  <section data-aos="slide-up" id="services" class="py-10 px-4 bg-indigo-100 dark:bg-gray-800">
+    <h2 class="text-3xl font-bold text-center mb-4 text-blue-900 dark:text-white">Our Services</h2>
+
+    <div class=" grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+      <div data-aos="zoom-in" class="w-90 p-7 text-blue-700 bg-white dark:bg-gray-700 rounded-lg shadow-2xl font-semibold h-50 flex flex-col items-center justify-center hover:bg-indigo-300 hover:text-white ">
+        <img class="w-20 h-20 mb-2" src="./img/social-media-marketing.png" alt="Social Media Marketing">
+        <p>Social Media Marketing</p>
+      </div>
+      <div data-aos="zoom-in" class="w-90 p-7 text-blue-700 bg-white dark:bg-gray-700 rounded-lg shadow-2xl font-semibold h-50 flex flex-col items-center justify-center  hover:bg-indigo-300 hover:text-white hover:shadow-lg  ">
+        <img class="w-20 h-20 mb-2" src="./img/digital-marketing.png" alt="Digital Marketing">
+        <p>Digital Marketing</p>
+      </div>
+      <div data-aos="zoom-in" class="w-90 p-7 text-blue-700 bg-white dark:bg-gray-700 rounded-lg shadow-2xl font-semibold h-50 flex flex-col items-center justify-center  hover:bg-indigo-300 hover:text-white hover:shadow-lg ">
+        <img class="w-20 h-20 mb-2" src="./img/Search-engine.png" alt="Search Engine Optimaztion">
+        <p>Search Engine Optimaztion</p>
+      </div>
+      <div data-aos="zoom-in" class="w-90 p-7 text-blue-700 bg-white dark:bg-gray-700 rounded-lg shadow-2xl font-semibold h-50 flex flex-col items-center justify-center  hover:bg-indigo-300 hover:text-white hover:inset-shadow-gray-200 ">
+        <img class="w-20 h-20 mb-2" src="./img/web-design.png" alt="Web Designing">
+        <p>Web Designing</p>
+      </div>
+      <div data-aos="zoom-in" class="w-90 p-7 text-blue-700 bg-white dark:bg-gray-700 rounded-lg shadow-2xl font-semibold h-50 flex flex-col items-center justify-center  hover:bg-indigo-300 hover:text-white hover:shadow-lg ">
+        <img class="w-20 h-20 mb-2" src="./img/email-marketing.png" alt="Email Marketing">
+        <p>Email Marketing</p>
+      </div>
+      <div data-aos="zoom-in" class="w-90 p-7 shadow-2xl text-blue-700 bg-white dark:bg-gray-700 rounded-lg font-semibold h-50 flex flex-col items-center justify-center  hover:bg-indigo-300 hover:text-white hover:shadow-lg ">
+        <img class="w-20 h-20 mb-2" src="./img/post-ad.png" alt="Performance Ads">
+        <p>Performance Ads</p>
+      </div>
+    </div>
+  </section>
+  <!-- Testimonial -->
+  <section data-aos="slide-up" class="py-16 px-4 bg-gray-300 text-indigo-700">
+    <h2 class="text-3xl font-bold text-center mb-8">What Our Clients Say</h2>
+    <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div data-aos="zoom-in" class="bg-white rounded-2xl p-6 text-center shadow-2xl transition-transform transform hover:scale-105 hover:shadow-lg duration-300 ease-in-out">
+        <img src="./img/jeniffer.jpg" alt="Jeniffer Smith" class="w-24 h-24 rounded-full mx-auto mb-4 object-cover">
+        <h3 class="text-lg font-semibold text-blue-900">Jeniffer Smith</h3>
+        <p class="text-sm text-gray-500 mb-4">CHEF</p>
+        <p class="text-gray-700">HYRA 360 transformed our online presence and helped us generate quality leads within weeks. Their expertise is unmatched!</p>
+      </div>
+      <div data-aos="zoom-in" class="bg-white rounded-2xl shadow-2xl p-6 text-center transition-transform transform hover:scale-105 hover:shadow-lg duration-300 ease-in-out">
+        <img src="./img/Pamela Duncan.jpg" alt="Pamela Duncan" class="w-24 h-24 rounded-full mx-auto mb-4 object-cover">
+        <h3 class="text-lg font-semibold text-blue-900">Pamela Duncan</h3>
+        <p class="text-sm text-gray-500 mb-4">DIRECTOR</p>
+        <p class="text-gray-700">The team at HYRA 360 delivered outstanding results with a tailored marketing strategy. Highly recommend for digital growth!</p>
+      </div>
+      <div data-aos="zoom-in" class="bg-white rounded-2xl shadow-2xl p-6 text-center transition-transform transform hover:scale-105 hover:shadow-lg duration-300 ease-in-out">
+        <img src="./img/Denis.jpg" alt="Denis Robinson" class="w-24 h-24 rounded-full mx-auto mb-4 object-cover">
+        <h3 class="text-lg font-semibold text-blue-900">Denis Robinson</h3>
+        <p class="text-sm text-gray-500 mb-4">CUSTMER</p>
+        <p class="text-gray-700">Design is a way of life, a point of view. It involves the whole complex of visual commun ications: talen.t, creative ability manual skill.</p>
+      </div>
+    </div>
+  </section>
+  <!-- StatsSection -->
+  <section data-aos="slide-up" id="stats" class="py-16 px-4 bg-indigo-100 dark:bg-gray-900">
+    <h2 class="text-3xl font-bold text-center mb-8 text-blue-900 ">Social Media </h2>
+    <div data-aos="zoom-in" class="card w-full bg-red-300 text-white rounded-2xl h-40 text-center p-5 font-bold text-3xl">
+      <h2>YouTube Subscribers</h2>
+      <p id="subCount">Loading...</p>
+    </div>
+  </section>
+   <!-- ContactForm -->
+   <div data-aos="slide-up" class="bg-gray-300 dark:bg-gray-800">
+    <section data-aos="zoom-in" class="py-16 px-4">
+      <h2 id="Contact" class="text-3xl font-bold text-center mb-8 text-blue-900 dark:text-white">Contact Us</h2>
+  
+      <div data-aos="zoom-in" class="max-w-2xl mx-auto bg-white dark:bg-gray-900 rounded-xl shadow-2xl hover:shadow-2xl p-8">
+        <form class="space-y-4">
+          <input 
+            type="text" 
+            placeholder="Name" 
+            class="w-full p-3 rounded border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-black dark:text-white placeholder-black dark:placeholder-gray-400" 
+            required
+          >
+          <input 
+            type="email" 
+            placeholder="Email" 
+            class="w-full p-3 rounded border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-black dark:text-white placeholder-black dark:placeholder-gray-400" 
+            required
+          >
+          <input 
+            type="tel" 
+            placeholder="Phone" 
+            class="w-full p-3 rounded border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-black dark:text-white placeholder-black dark:placeholder-gray-400"
+          >
+          <textarea 
+            placeholder="Message" 
+            class="w-full p-3 rounded border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-black dark:text-white placeholder-black dark:placeholder-gray-400" 
+            rows="4"
+          ></textarea>
+          <button type="submit" class="bg-blue-600 hover:bg-blue-700 text-white py-2 px-6 rounded w-full">
+            Send
+          </button>
+        </form>
+      </div>
+    </section>
+  </div>
+
+  <!-- footer -->
+  
+  <footer class="w-full bg-gray-900 px-4 text-white pt-5 pb-5 md:flex-row justify-between">
+    <div class="flex justify-center">
+      <div class="flex gap-8 items-center justify-center">
+        <a href="https://instagram.com/navieo.in?igshid=YTQwZjQ0NmI0OA=="><img src="./img/Facebook.png" alt="facebook" class="w-10 h-10"></a>
+        <a href="https://www.instagram.com/agencysocialsanta?igsh=N21mNWVqNmVoaHB5"><img src="./img/instagram.png" alt="Instagram" class="w-10 h-10"></a>
+        <a href="https://pin.it/3bsn7VhcN"><img src="./img/pinterest.png" alt="Pinterest" class="w-10 h-10"></a>
+        <a href="https://youtube.com/@navieofashion?si=UCbm_okPYHoQJJZh"><img src="./img/youtube.png" alt="Youtube" class="w-10 h-10"></a>
+      </div>
+
+  </footer>
+  <footer class="bg-black text-white h-5 font-bold text-center">
+    <P class="text-2xl">2025 Your Company. All rights reserved.</P>
+  </footer>
+  
+  <!-- js -->
+  <script>
+
+   const API_KEY = 'AIzaSyDRjFnVZ2ANWaEbydPbQT7aihX0VOrLfyI';
+   const CHANNEL_ID = 'UCULUfXN8r5yWf-ofnj_TF1w';
+   const subCountEl = document.getElementById('subCount');
+
+   async function getYouTubeSubscribers() {
+    try{
+      const url = `https://www.googleapis.com/youtube/v3/channels?part=statistics&id=${CHANNEL_ID}&key=${API_KEY}`;
+      const response = await fetch(url);
+        const data = await response.json();
+        const count = data.items[0].statistics.subscriberCount;
+        subCountEl.textContent = Number(count).toLocaleString() + " subscribers";
+    }catch (error) {
+        subCountEl.textContent = 'Error loading stats';
+        console.error(error);
+      }
+   }
+   getYouTubeSubscribers();
+    setInterval(getYouTubeSubscribers, 30000); 
+  </script>
+  <script>
+    AOS.init();
+  </script>
+
+</body>
+</html>
