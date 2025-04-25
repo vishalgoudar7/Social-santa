@@ -169,20 +169,15 @@
    const CHANNEL_ID = 'UCULUfXN8r5yWf-ofnj_TF1w';
    const subCountEl = document.getElementById('subCount');
 
-   async function getYouTubeSubscribers() {
-    try{
-      const url = `https://www.googleapis.com/youtube/v3/channels?part=statistics&id=${CHANNEL_ID}&key=${API_KEY}`;
-      const response = await fetch(url);
-        const data = await response.json();
-        const count = data.items[0].statistics.subscriberCount;
-        subCountEl.textContent = Number(count).toLocaleString() + " subscribers";
-    }catch (error) {
-        subCountEl.textContent = 'Error loading stats';
-        console.error(error);
-      }
-   }
-   getYouTubeSubscribers();
-    setInterval(getYouTubeSubscribers, 30000); 
+    async function getYouTubeSubs() {
+    const url = `https://www.googleapis.com/youtube/v3/channels?part=statistics&id=${CHANNEL_ID}&key=${API_KEY}`;
+    const response = await fetch(url);
+    const data = await response.json();
+    const subscribers = data.items[0].statistics.subscriberCount;
+    subCount.innerText = subscribers;
+  }
+
+  getYouTubeSubs();
   </script>
   <script>
     AOS.init();
